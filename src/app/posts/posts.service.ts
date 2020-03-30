@@ -10,6 +10,8 @@ export class PostsService {
 
   constructor(private http: HttpClient) {}
 
+  //7cDEiKwwxRbyZVrR
+
   getPosts(){
     this.http.get<{message: string, posts: Post[]}>('http://localhost:3000/api/posts')
       .subscribe( (postData) => {
