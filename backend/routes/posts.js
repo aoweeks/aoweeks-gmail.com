@@ -20,7 +20,7 @@ router.post("", (req, res, next) => {
     }).catch( () => console.log('error'));
 });
 
-router.put("/api/posts/:id", (req, res, next) => {
+router.put("/:id", (req, res, next) => {
 
   const post = new Post({
     _id: req.params.id,
